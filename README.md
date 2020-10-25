@@ -17,7 +17,7 @@ Presents a list of AWS logs matching a filter pattern (if provided) and then run
     7. /aws/lambda/lutils-S3TextLinesToSNSLambda-709E47USJ8LX
     8. /aws/lambda/lutils-S3TextLinesToSNSLambda-8Q74TMJXLPRZ
 
-Select log number: 7
+Select log number: 8
 
 Getting logs for: /aws/lambda/lutils-S3TextLinesToSNSLambda-8Q74TMJXLPRZ
 
