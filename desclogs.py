@@ -39,7 +39,7 @@ def main(filter):
 
     print(f"\nGetting logs for: {selection}")
     with open("/Users/sziegler/temp/temp_shell.sh", "w") as file:
-        command = f"awslogs get {selection} --start {start} --timestamp"
+        command = f"awslogs get {selection} --start {start}"
         file.write(command)
 
 
