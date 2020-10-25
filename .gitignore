@@ -1,3 +1,7 @@
+*.code-workspace
+temp_shell.sh
+
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
