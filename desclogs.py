@@ -26,6 +26,12 @@ def main(filter):
         print(f"\t{index + 1}. {log}")
 
     log_num = input("\nSelect log number: ")
+    start = "10m"
+    if " " in log_num:
+        parts = log_num.split(" ")
+        log_num = parts[0]
+        start = parts[1]
+
     if log_num == "0":
         quit()
     index = int(log_num) - 1
@@ -33,7 +39,7 @@ def main(filter):
 
     print(f"\nGetting logs for: {selection}")
     with open("/Users/sziegler/temp/temp_shell.sh", "w") as file:
-        command = f"awslogs get {selection} --start 10m --timestamp"
+        command = f"awslogs get {selection} --start {start} --timestamp"
         file.write(command)
 
 
