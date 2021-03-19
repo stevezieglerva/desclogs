@@ -33,7 +33,7 @@ def main(filter):
         start = parts[1]
 
     if log_num == "0":
-        quit()
+        exit(1)
     index = int(log_num) - 1
     selection = filtered_logs[index]
 
