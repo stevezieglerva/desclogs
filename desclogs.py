@@ -21,9 +21,11 @@ def get_log_groups():
 def main(filter):
     logs = get_log_groups()
 
-    filtered_logs = [l for l in logs if filter in l]
+    filtered_logs = [l for l in logs if filter.lower() in l.lower()]
     for index, log in enumerate(filtered_logs):
         print(f"\t{index + 1}. {log}")
+        if (index + 1) % 5 == 0:
+            print("")
 
     log_num = input("\nSelect log number: ")
     start = "10m"
