@@ -2,8 +2,8 @@
 Presents a list of AWS logs matching a filter pattern (if provided) and then runs awslogs against the users chosen selection
 
 ## Prerequisites
-* boto3
-* [awslogs](https://github.com/jorgebastida/awslogs)
+* pip install boto3
+* pip install [awslogs](https://github.com/jorgebastida/awslogs)
 
 ## Usage
 ```
